@@ -1,38 +1,93 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  list-style: none;
+}
+ul li {
+  padding: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+ol li{
+  text-align: left;
+}
+input {
+  padding: 8px;
+  border: 2px solid salmon;
+  border-radius: 8px;
+}
+.tabs ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.tabs ul li {
+  width: 200px;
+  border-bottom: 4px solid grey;
+  cursor: pointer;
+  padding: 2px 4px;
+  margin: 0 4px;
+}
+.tabs ul li.active {
+  border-bottom: 4px solid #34d399;
+  color: #34d399;
+}
+.non-blocking-ui h3 {
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  color: #34d399;
+  border: 1px solid #34d399;
+  background-color: #242424;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button[type="danger"]{
+  color: red;
+  border: 1px solid red;
+}
+.r18-demolist {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.api-list{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  width: 20%;
 }
-
-.App-link {
-  color: #61dafb;
+.api-list div {
+  text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-title {
+  font-weight: bold;
+  display: block;
+  padding: 4px 0;
+}
+.api-list .subnav {
+  padding-left: 24px;
+}
+.api-list button{
+  margin-bottom: 2rem;
+}
+.api-demo{
+  margin: 0 auto;
+}
+.layout-header{
+  height: 40px;
+  width: 100%;
+  background-color: #34d399;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }

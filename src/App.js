@@ -71,8 +71,8 @@ function NavComponent({ id, title }) {
     <div className="subnav">
       <button
         onClick={() => {
-          const origin = document.location.origin;
-          document.location.href = `${origin}?c=${id}`;
+          const { origin, pathname } = document.location;
+          document.location.href = `${origin}${pathname}?c=${id}`;
         }}
       >
         {title}
